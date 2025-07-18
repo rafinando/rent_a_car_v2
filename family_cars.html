@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Business card website</title>
+  <link rel="stylesheet" href="styles2.css" />
+  <script src="function.js" defer></script>
+</head>
+
+<body style="background-color: #e9cd09; font-family: Arial, sans-serif; margin: 0; padding: 0;">
+
+  <header>
+    <div style="background-color: #333333;">
+
+      <a href="rent_page.html"class="back-button">back</a>
+    </div>
+  </header>
+
+  <section style="text-align: center; margin: 40px;">
+    <h3>Family Cars</h3>
+    <label for="familyCar">Choose a car:</label>
+    <select id="familyCar">
+      <option value="avanza">Avanza</option>
+      <option value="xenia">Xenia</option>
+      <option value="ertiga">Ertiga</option>
+      <option value="mobilio">Mobilio</option>
+    </select><br><br>
+  
+    <label>Start Date:</label>
+    <input type="date" id="startDate">
+    
+    <label>Return Date:</label>
+    <input type="date" id="endDate">
+  
+    <!-- Tambahkan setelah input tanggal -->
+    <label for="paymentMethod">Metode Pembayaran:</label>
+    <select id="paymentMethod">
+      <option value="">-- Pilih Metode --</option>
+      <option value="Transfer Bank">Transfer Bank</option>
+      <option value="OVO">OVO</option>
+      <option value="GoPay">GoPay</option>
+      <option value="Dana">Dana</option>
+    </select><br><br>
+      
+    <button onclick="bayar('familyCar', 'startDate', 'endDate', 'paymentMethod', 'resultFamily')">Bayar</button>
+    <p id="resultFamily"></p>
+  </section>
+  
+  
+  
+
+  <footer style="padding-top: 30%">
+    <div style="background-color: #333333; color: #ffffff; text-align: center; padding: 15px; font-size: 14px;">
+      &copy; 2025 Rent A Car. All rights reserved. | 
+      <a href="#" style="color: #fdd835; text-decoration: none;">Privacy Policy</a> | 
+      <a href="#" style="color: #fdd835; text-decoration: none;">Contact Us</a>
+    </div>
+  </footer>
+
+</body>
+</html>

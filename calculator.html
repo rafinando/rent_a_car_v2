@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Business card website</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="function.js" defer></script>
+</head>
+
+<body style="background-color: #e9cd09; font-family: Arial, sans-serif; margin: 0; padding: 0;">
+
+  <header>
+    <div style="background-color: #333333;">
+
+      <a href="rent_page.html"class="back-button">back</a>
+    </div>
+  </header>
+
+  <section style="text-align: center; margin-top: 40px; color: white;">
+    <h2>Rental Price Calculator</h2>
+  
+    <div id="rentalForm" style="margin-top: 15px;">
+      <label for="carType">Choose a car type:</label><br>
+      <select id="carType" onchange="calculatePrice()" style="margin-bottom: 15px;">
+        <option value="" disabled selected>-- select --</option>
+        <option value="small">Small Cars</option>
+        <option value="family">Family Cars</option>
+        <option value="suv">SUVs</option>
+        <option value="premium">Premium Cars</option>
+      </select><br>
+  
+      <label for="days">Number of days:</label><br>
+      <input type="number" id="days" min="1" value="1" oninput="calculatePrice()"><br><br>
+  
+      <div id="result" style="margin-top: 20px; font-size: 18px;"></div>
+    </div>
+  </section>
+  
+
+  <footer style="padding-top: 30%">
+    <div style="background-color: #333333; color: #ffffff; text-align: center; padding: 15px; font-size: 14px;">
+      &copy; 2025 Rent A Car. All rights reserved. | 
+      <a href="#" style="color: #fdd835; text-decoration: none;">Privacy Policy</a> | 
+      <a href="#" style="color: #fdd835; text-decoration: none;">Contact Us</a>
+    </div>
+  </footer>
+
+</body>
+</html>

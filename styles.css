@@ -1,0 +1,68 @@
+.card-container {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 23%;
+    background-color: #333333;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-sizing: border-box;
+    min-height: 450px;
+  }
+  
+  .card p {
+    margin: 5px 0;
+  }
+  
+  .rent_button {
+    margin-top: auto;
+    background-color: #1e1e1e;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 15px;
+    border: 1px solid #000;
+    width: 90%;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .rent_button:hover {
+    background-color: #444;
+  }
+
+  .back-button {
+    display: inline-block;
+    margin: 15px 20px;
+    padding: 10px 20px;
+    background-color: #222;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #fdd835;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .back-button:hover {
+    background-color: #fdd835;
+    color: #222;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  

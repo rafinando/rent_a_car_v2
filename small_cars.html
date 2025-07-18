@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Business card website</title>
+  <link rel="stylesheet" href="styles2.css" />
+  <script src="function.js" defer></script>
+</head>
+
+<body style="background-color: #e9cd09; font-family: Arial, sans-serif; margin: 0; padding: 0;">
+
+  <header>
+    <div style="background-color: #333333;">
+
+      <a href="rent_page.html"class="back-button">back</a>
+    </div>
+  </header>
+
+  <section style="text-align: center; margin: 40px;">
+    <h3>Small Cars</h3>
+    <label for="smallCar">Choose a car:</label>
+    <select id="smallCar">
+      <option value="toyota_agya">Toyota Agya</option>
+      <option value="daihatsu_ayla">Daihatsu Ayla</option>
+      <option value="honda_brio">Honda Brio</option>
+      <option value="karimun">Suzuki Karimun Wagon R</option>
+      <option value="datsun_go">Datsun GO</option>
+      <option value="wuling_air_ev">Wuling Air EV</option>
+    </select><br><br>
+  
+    <label>Start Date:</label>
+    <input type="date" id="startDate">
+    
+    <label>Return Date:</label>
+    <input type="date" id="endDate">
+  
+    <!-- Tambahkan setelah input tanggal -->
+    <label for="paymentMethod">Metode Pembayaran:</label>
+    <select id="paymentMethod">
+      <option value="">-- Pilih Metode --</option>
+      <option value="Transfer Bank">Transfer Bank</option>
+      <option value="OVO">OVO</option>
+      <option value="GoPay">GoPay</option>
+      <option value="Dana">Dana</option>
+    </select><br><br>
+      
+    <button onclick="bayar('smallCar', 'startDate', 'endDate', 'paymentMethod', 'resultSmall')">Bayar</button>
+    <p id="resultSmall"></p>
+  </section>
+  
+  
+
+  <footer style="padding-top: 30%">
+    <div style="background-color: #333333; color: #ffffff; text-align: center; padding: 15px; font-size: 14px;">
+      &copy; 2025 Rent A Car. All rights reserved. | 
+      <a href="#" style="color: #fdd835; text-decoration: none;">Privacy Policy</a> | 
+      <a href="#" style="color: #fdd835; text-decoration: none;">Contact Us</a>
+    </div>
+  </footer>
+
+</body>
+</html>
